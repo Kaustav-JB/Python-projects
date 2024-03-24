@@ -45,6 +45,7 @@ def game():
         turns = check_answer(guess,target,turns)
         if turns==0:
             print("\nGAME OVER!.\nYou are out of turns!")
+            print(f"\nThe correct answer was {target}\n")
             return
     play_again = input("\nPress Y to play again!\nPress N to quit!\n").upper()
     if play_again.lower()=="y":
